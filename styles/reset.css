@@ -1,0 +1,60 @@
+/* reset.css */
+
+/* 1. Eliminar márgenes y paddings predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* 2. Establecer una base para la tipografía */
+  body {
+    line-height: 1.5;
+    font-family: sans-serif;
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* 3. Quitar estilos predeterminados de listas */
+  ul,
+  ol {
+    list-style: none;
+  }
+  
+  /* 4. Quitar estilos predeterminados de enlaces */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* 5. Imágenes responsivas */
+  img,
+  picture {
+    max-width: 100%;
+    display: block;
+  }
+  
+  /* 6. Quitar borde en botones y campos de formulario */
+  button,
+  input,
+  select,
+  textarea {
+    font: inherit;
+    border: none;
+    background: none;
+    color: inherit;
+    outline: none;
+  }
+  
+  /* 7. Eliminar diferencias en botones */
+  button {
+    cursor: pointer;
+    background-color: transparent;
+  }
+  
+  /* 8. Tablas sin espaciado */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  

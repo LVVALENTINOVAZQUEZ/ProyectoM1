@@ -3,9 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" type = "text/css" href = "./styles/styles.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Proyecto M1</h1>
+    <header>
+    <div class = "contenedorone"> 
+        <h1>Lorenzo Valentino Vázquez</h1>
+        <h2>Mi página web</h2>
+        <h2>¿Quién soy?</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit deserunt animi, ipsa voluptatem velit quia adipisci cumque fugiat inventore, consequuntur explicabo minima officiis voluptatum. Temporibus facilis quasi architecto delectus consectetur.</p>
+         </div>
+</header>
+<main> 
+ <section> 
+     <h2 class="tecnologíaNueva">Mis tecnologías favoritas</h2>
+     <div class = "contenedorPrimero">
+    <div class="tecnologíaOne"> 
+        <h4>HTML</h4>
+        <img src ="./scripts/assets/imagenhtmlejemplo.webp" class="logo HTML">
+    </div>
+    <div class="tecnologíaOne"> 
+        <h4>css</h4>
+        <img src ="./scripts/assets/CSS-Logo.png" class="logo CSS">
+    </div>
+    <div class="tecnologíaOne"> 
+        <h4>javascript</h4>
+        <img src ="./scripts/assets/javascript-logo-javascript-icon-transparent-free-png.webp" class="logo JAVASCRIPT">
+    </div>
+</div>
+</section>
+
+<h3 class="titlesecundario"> Mis actividades favoritas</h3>
+
+<div class="actividad-form-container">
+    <form id="actividad-form">
+      <label for="titulo">Título:</label>
+      <input type="text" id="titulo" name="titulo" placeholder="Ingrese el título">
+  
+      <label for="descripcion">Descripción:</label>
+      <textarea id="descripcion" name="descripcion" placeholder="Ingrese la descripción" rows="5"></textarea>
+  
+      <label for="imagen">Link de la imagen:</label>
+      <input type="url" id="imagen" name="imagen" placeholder="Ingrese el link de la imagen">
+  
+      <button type="submit">Agregar actividad</button>
+    </form>
+  </div>
+
+  <div id="actividades-agregadas"></div>
+
+  
+  
+
+</main>
+
+<script>
+     document.getElementById("actividad-form").addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const titulo = document.getElementById("titulo").value;
+      const descripcion = document.getElementById("descripcion").value;
+      const imagen = document.getElementById("imagen").value;
+
+      const nuevaActividad = document.createElement("div");
+      nuevaActividad.className = "actividad";
+      nuevaActividad.innerHTML = `
+        <h4>${titulo}</h4>
+        <p>${descripcion}</p>
+        <img src="${imagen}" alt="Imagen de la actividad">
+      `;
+
+      document.getElementById("actividades-agregadas").appendChild(nuevaActividad);
+
+      // Limpia los campos después de agregar
+      document.getElementById("actividad-form").reset();
+    });
+  </script>
+  
+
+
 </body>
 </html>
