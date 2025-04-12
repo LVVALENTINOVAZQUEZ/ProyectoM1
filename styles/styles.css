@@ -15,7 +15,7 @@ body {
     flex-direction: column;
     gap: 20px;
     padding-top: 40px;
-    background-color: #3e3e3e; /* gris más claro que el fondo */
+    background-color: #3e3e3e; 
     border-radius: 10px;
     padding: 1em;
 }
@@ -24,17 +24,16 @@ body {
 
     .contenedorPrimero {
         display: flex;
-        flex-direction: row; /* Asegura que los hijos estén en fila */
-        justify-content: space-around; /* O space-between / space-around */
-        gap: 2em; /* Espacio entre los logos */
-        background-color: #f0f0f1;
+        flex-direction: row;
+        justify-content: space-around; 
+        gap: 2em; 
         width: 90vw;
         margin: auto;
         margin-top: 0;
         border: 5px solid rgb(36, 33, 33);
         border-radius: 15px;
         padding: 1em;
-        background-color: #3e3e3e; /* gris más claro que el fondo */
+        background-color: #242221;
         border-radius: 10px;
         padding: 1em;
       }
@@ -53,9 +52,9 @@ body {
     align-items: center;
 }
 .logo {
-    width: 150px;     /* Tamaño consistente */
+    width: 150px;     
     height: 150px;
-    object-fit: contain; /* O 'cover', según prefieras */
+    object-fit: contain; 
 }
 
 .tecnologíaNueva {
@@ -70,34 +69,34 @@ body {
     width: 100%
   }
 
-  /* Contenedor del formulario centrado */
+ 
 .actividad-form-container {
     display: flex;
     flex-direction: column;
-    align-items: center;    /* Centra horizontalmente */
-    margin: 20px auto;      /* Margen automático para centrar en la página */
-    max-width: 400px;       /* Ancho máximo para limitar el formulario */
-    background-color: #3e3e3e; /* gris más claro que el fondo */
+    align-items: center;    
+    margin: 20px auto;     
+    max-width: 400px;      
+    background-color: #3e3e3e; 
     border-radius: 10px;
     padding: 1em;
   }
   
-  /* Estilo general del formulario */
+  
   #actividad-form {
     width: 100%;
     display: flex;
     flex-direction: column;
   }
   
-  /* Etiquetas del formulario */
-  #actividad-form label {
+  
+  #actividad-form-label {
     margin-bottom: 5px;
     font-weight: bold;
   }
   
-  /* Campos de texto y textarea */
-  #actividad-form input, 
-  #actividad-form textarea {
+ 
+  #actividad-form-input, 
+  #actividad-form-textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -106,17 +105,17 @@ body {
     font-size: 1rem;
   }
   
-  /* Estilo del botón */
-  #actividad-form button {
+  
+  #actividad-form-button {
     padding: 10px;
-    background-color: #4caf50;
+    background-color: #25c72a;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
   }
   
-  /* Opcional: efecto hover para el botón */
+  
   #actividad-form button:hover {
     background-color: #45a049;
   }
