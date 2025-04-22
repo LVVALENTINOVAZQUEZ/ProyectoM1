@@ -8,8 +8,8 @@ body {
 
 
 .contenedorone{
-    display: flex;
-    justify-content: center; 
+  display: flex;
+  justify-content: center; 
     align-items: center;  
     min-height: 50vh;
     flex-direction: column;
@@ -18,10 +18,15 @@ body {
     background-color: #3e3e3e; 
     border-radius: 10px;
     padding: 1em;
-}
-
-
-
+  }
+  
+  .tecnologíaNueva {
+      text-align: center;
+      margin: 0 auto 0.2em auto
+  
+    }
+  
+  
     .contenedorPrimero {
         display: flex;
         flex-direction: row;
@@ -57,11 +62,6 @@ body {
     object-fit: contain; 
 }
 
-.tecnologíaNueva {
-    text-align: center;
-    margin: 0 auto 0.2em auto
-
-  }
 
   .titlesecundario{
     text-align: center;
