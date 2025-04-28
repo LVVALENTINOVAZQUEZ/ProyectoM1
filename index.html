@@ -1,69 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" type = "text/css" href = "./styles/styles.css">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-    <div class = "contenedorone"> 
-        <h1>Lorenzo Valentino Vázquez</h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href="./styles/reset.css">
+        <link rel="stylesheet" type = "text/css" href = "./styles/styles.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <div class = "contenedorone"> 
+                <h1>Lorenzo Valentino Vázquez</h1>
         <h2>Mi página web</h2>
         <h2>¿Quién soy?</h2>
         <p>Me llamo Lorenzo Valentino Vázquez, y me encuentro inmerso en el estudio de la programación la cual estoy aprendiendo con mucha paciencia y pasión.</p>
          </div>
-</header>
-<main> 
+        </header>
+        <main> 
  <section> 
      <h2 class="tecnologíaNueva">Mis tecnologías favoritas</h2>
      <div class = "contenedorPrimero">
-    <div class="tecnologíaOne"> 
+         <div class="tecnologíaOne"> 
         <h4>HTML</h4>
-        <img src ="./scripts/assets/imagenhtmlejemplo.webp" class="logo HTML">
+        <img src ="./scripts/assets/imagenhtmlejemplo.webp" class="logo">
     </div>
     <div class="tecnologíaOne"> 
         <h4>css</h4>
-        <img src ="./scripts/assets/CSS-Logo.png" class="logo CSS">
+        <img src ="./scripts/assets/CSS-Logo.png" class="logo">
     </div>
     <div class="tecnologíaOne"> 
         <h4>javascript</h4>
-        <img src ="./scripts/assets/javascript-logo-javascript-icon-transparent-free-png.webp" class="logo JAVASCRIPT">
+        <img src ="./scripts/assets/javascript-logo-javascript-icon-transparent-free-png.webp" class="logo">
     </div>
 </div>
 </section>
 
 <section> 
-  <article>
-<h3 class="titlesecundario"> Mis actividades favoritas</h3>
-
-<div class="actividad-form-container">
-    <form id="actividad-form">
-      <label>Título:</label>
-      <input type="text" id="titulo" name="titulo" placeholder="Ingrese el título">
+    <article>
+        <h3 class="titlesecundario"> Mis actividades favoritas</h3>
+        
+        <div class="actividad-form-container">
+            <form id="actividad-form">
+                <label>Título:</label>
+                <input type="text" id="titulo" name="titulo" placeholder="Ingrese el título">
+                
+                <label>Descripción:</label>
+                <textarea id="descripcion" name="descripcion" placeholder="Ingrese la descripción" rows="5"></textarea>
+                
+                <label>Link de la imagen:</label>
+                <input type="url" id="imagen" name="imagen" placeholder="Ingrese el link de la imagen">
   
-      <label>Descripción:</label>
-      <textarea id="descripcion" name="descripcion" placeholder="Ingrese la descripción" rows="5"></textarea>
-  
-      <label>Link de la imagen:</label>
-      <input type="url" id="imagen" name="imagen" placeholder="Ingrese el link de la imagen">
-  
-      <input type="submit" value="SUBMIT" id="actividad-form-button">
-    </form>
-  </div>
+                <input type="submit" value="SUBMIT" id="actividad-form-button">
+            </form>
+        </div>
+        
+        <section class="actividades-agregadas"></section>
+        <h2>ACTIVIDADES</h2>
+        <article id="organizador">
 
-  <div id="actividades-agregadas"></div>
-
-  
-  
-
-</main>
-
-
-  
-
+        </article>
+    </section>
+        
+        
+        
+        
+    </main>
+    
+    
+    
+    
+    <script src="./scripts/index.js"> </script>
 </body>
-<script src="./scripts/index.js"> </script>
 </html>
+
+
+

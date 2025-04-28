@@ -31,11 +31,89 @@ class Repository{
 
 const repository = new Repository();
 
-const actividad1 = repository.createActivity("Salir a correr 1", "descripcion", "URL:IMAGEN")
-repository.createActivity("Salir a correr 2", "descripcion", "URL:IMAGEN")
-repository.createActivity("Salir a correr 3", "descripcion", "URL:IMAGEN")
-repository.createActivity("Salir a correr 4", "descripcion", "URL:IMAGEN")
-repository.createActivity("Salir a correr 5", "descripcion", "URL:IMAGEN")
 
-repository.deleteActivity(actividad1.id)
-console.log(repository.getAllActivities());
+function eliminarActividad(id){
+  repository.deleteActivity(id)
+
+  agregarActividadAlContenedor()
+}
+
+function objetoAHtml (actividad){
+const {id, title, description, imgURL} = actividad
+
+  const divcontenedor = document.createElement("div")
+  const h2Título = document.createElement("h2")
+  const span = document.createElement("span")
+  const img = document.createElement("img")
+  const p = document.createElement("p")
+  
+  h2Título.innerText = title
+  span.innerHTML = "x"
+  span.classList.add("x")
+  img.src = imgURL
+  img.alt = `imagen de la actividad: ${title}`;
+  p.innerText = description
+  divcontenedor.classList.add("Tarjeta")
+  
+  span.addEventListener("click", () => eliminarActividad(id));
+  
+  
+  
+  divcontenedor.appendChild(h2Título)
+  divcontenedor.appendChild(span)
+  divcontenedor.appendChild(img)
+  divcontenedor.appendChild(p)
+
+  return divcontenedor
+
+}
+
+function agregarActividadAlContenedor(){
+  const organizador = document.querySelector("#organizador")
+  organizador.innerHTML = ""
+const arrayActividades = repository.getAllActivities()
+const arrayActividadesHtml = arrayActividades.map(objetoAHtml)
+
+arrayActividadesHtml.forEach((act) => {
+  organizador.appendChild(act)
+})
+}
+
+
+
+function handleSubmitClic(evento){
+  evento.preventDefault()
+
+  const inputTítulo = document.querySelector("#titulo")
+  const inputDescripción = document.querySelector("#descripcion")
+  const inputActividad = document.querySelector("#imagen")
+
+  const title =inputTítulo.value
+  const description = inputDescripción.value
+  const imgURL = inputActividad.value
+
+  if(!title || !description || !imgURL) return alert("Falta información en los campos")
+
+    repository.createActivity(title, description, imgURL)
+
+    agregarActividadAlContenedor()
+}
+
+
+const actividadformbutton = document.querySelector("#actividad-form-button");
+actividadformbutton.addEventListener("click", handleSubmitClic)
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
