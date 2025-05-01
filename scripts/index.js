@@ -1,8 +1,8 @@
 class Activity {
-    constructor(id, title, descripción, imgURL){
+    constructor(id, title, description, imgURL){
         this.id = id;
         this.title = title;
-        this.descripción = descripción;
+        this.description = description;
         this.imgURL = imgURL;
     }
 }
@@ -15,8 +15,8 @@ class Repository{
     getAllActivities = () => this.activities;
       
 
-      createActivity = (id, title, description, imgUrl) => {
-        const activity = new Activity(crypto.randomUUID(), id, title, description, imgUrl);
+      createActivity = (title, description, imgUrl) => {
+        const activity = new Activity(crypto.randomUUID(),title, description, imgUrl);
         const activiteFound = this.activities.find((act) => act.title === title)
         if (activiteFound) return alert("la actividad ya existe")
         this.activities.push(activity);

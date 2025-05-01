@@ -4,6 +4,32 @@ body {
     color: white; 
   }
   
+  .separator {
+    border: none;                
+    border-top: 2px solid #ccc;  
+    margin: 0.5rem 0 1.5rem;     
+    width: 60%;                 
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  
+  .form-field {
+    display: block;
+    width: 100%;                  
+    padding: 0.75rem;             
+    margin-bottom: 1rem;          
+    border: 2px solid #888;      
+    border-radius: 4px;           
+    font-size: 1rem;              
+    transition: border-color 0.3s ease;
+  }
+  .divider{
+    border: none;
+    border-top: 2px solid var(--clr-primary);
+    width: 60px;
+    margin: 0.5rem auto 2rem;
+  }
 
 
 

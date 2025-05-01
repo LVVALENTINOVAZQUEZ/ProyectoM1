@@ -10,23 +10,27 @@
     <body>
         <header>
             <div class = "contenedorone"> 
-                <h1>Lorenzo Valentino Vázquez</h1>
-        <h2>Mi página web</h2>
-        <h2>¿Quién soy?</h2>
+                <h1 id="header h1">Lorenzo Valentino Vázquez</h1>
+                <hr class="separator">
+            <h2>Mi página web</h2>
+            <hr class="separator">
+            <h2>¿Quién soy?</h2>
+            <hr class="separator">
         <p>Me llamo Lorenzo Valentino Vázquez, y me encuentro inmerso en el estudio de la programación la cual estoy aprendiendo con mucha paciencia y pasión.</p>
          </div>
         </header>
         <main> 
  <section> 
      <h2 class="tecnologíaNueva">Mis tecnologías favoritas</h2>
+     <hr class="divider">
      <div class = "contenedorPrimero">
          <div class="tecnologíaOne"> 
         <h4>HTML</h4>
-        <img src ="./scripts/assets/imagenhtmlejemplo.webp" class="logo">
+        <img src ="./scripts/assets/símbolo de HTML.webp" class="logo">
     </div>
     <div class="tecnologíaOne"> 
         <h4>css</h4>
-        <img src ="./scripts/assets/CSS-Logo.png" class="logo">
+        <img src ="./scripts/assets/Símbolo de CSS.webp" class="logo">
     </div>
     <div class="tecnologíaOne"> 
         <h4>javascript</h4>
@@ -42,20 +46,20 @@
         <div class="actividad-form-container">
             <form id="actividad-form">
                 <label>Título:</label>
-                <input type="text" id="titulo" name="titulo" placeholder="Ingrese el título">
+                <input type="text" id="titulo" name="titulo" placeholder="Ingrese el título" class="form-field">
                 
                 <label>Descripción:</label>
-                <textarea id="descripcion" name="descripcion" placeholder="Ingrese la descripción" rows="5"></textarea>
+                <textarea id="descripcion" name="descripcion" placeholder="Ingrese la descripción" rows="5" class="form-field"></textarea>
                 
                 <label>Link de la imagen:</label>
-                <input type="url" id="imagen" name="imagen" placeholder="Ingrese el link de la imagen">
+                <input type="url" id="imagen" name="imagen" placeholder="Ingrese el link de la imagen" class="form-field">
   
                 <input type="submit" value="SUBMIT" id="actividad-form-button">
             </form>
         </div>
         
         <section class="actividades-agregadas"></section>
-        <h2>ACTIVIDADES</h2>
+        <h2 id="subtitulo">ACTIVIDADES</h2>
         <article id="organizador">
 
         </article>
