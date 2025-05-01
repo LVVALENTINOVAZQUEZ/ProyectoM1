@@ -114,24 +114,6 @@ body {
     flex-direction: column;
   }
   
-  
-  #actividad-form-label {
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
- 
-  #actividad-form-input, 
-  #actividad-form-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
-  }
-  
-  
   #actividad-form-button {
     padding: 10px;
     background-color: #25c72a;
