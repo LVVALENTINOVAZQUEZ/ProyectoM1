@@ -18,3 +18,23 @@ El objetivo es practicar la estructura básica de un sitio web estático con HTM
 1. **Clonar el repositorio**
    ```bash
    git clone https://github.com/LVVALENTINOVAZQUEZ/ProyectoM1.git
+
+2. **Instalar Node.js y npm**
+Asegurate de tener instalados Node.js y npm en tu sistema.
+
+3. **Instalar dependencias**
+   ```bash
+   npm install
+
+
+  ##  ▶️ Cómo ejecutar localmente
+   
+   1. **Inicia Webpack en modo watch**
+   ```bash
+   npm start
+   ```
+
+## 📌 Notas adicionales
+- El proyecto está dividido en **tres secciones principales** para mostrar información del usuario.  
+- Se utiliza **live-server** para levantar un servidor local de desarrollo.  
+- Incluye **Jasmine** para pruebas unitarias básicas.  
